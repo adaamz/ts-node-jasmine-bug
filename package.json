@@ -1,0 +1,30 @@
+{
+  "name": "ts-node-jasmine-bug",
+  "version": "1.0.0",
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adaamz/ts-node-jasmine-bug.git"
+  },
+  "author": "Adam Žurek<adam.zurek@jabko.net>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adaamz/ts-node-jasmine-bug/issues"
+  },
+  "homepage": "https://github.com/adaamz/ts-node-jasmine-bug#readme",
+  "devDependencies": {
+    "@types/jasmine": "^3.5.10",
+    "@types/node": "^14.0.13",
+    "jasmine": "^3.5.0",
+    "ts-loader": "^7.0.5",
+    "ts-node": "^8.10.2",
+    "typescript": "^3.9.5",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "ts-node node_modules/jasmine/bin/jasmine --config=jasmine.json",
+    "ts-node-test": "ts-node app/index.ts"
+  }
+}
