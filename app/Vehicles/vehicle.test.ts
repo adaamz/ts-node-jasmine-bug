@@ -1,6 +1,8 @@
 import {countVehicles} from "./vehicle";
 
 describe("Test vehicle count", () => {
-  const result = countVehicles([]);
-  expect(result).toBe(0);
+  it("Returns 0 for empty list", () => {
+    const result = countVehicles([]);
+    expect(result).toBe(0);
+  });
 });
